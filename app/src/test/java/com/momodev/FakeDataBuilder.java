@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 public class FakeDataBuilder {
     public static Bill getElectricBill() {
         Bill result = new Bill();
+        result.setId("1");
         result.setBillType("Electric");
         result.setDate(LocalDate.of(2023, 12, 20));
         result.setProvider("EVN HCM");
@@ -22,6 +23,7 @@ public class FakeDataBuilder {
 
     public static Bill getWaterBill() {
         Bill result = new Bill();
+        result.setId("2");
         result.setBillType("Water");
         result.setDate(LocalDate.of(2023, 12, 21));
         result.setProvider("TRUNG AN");
