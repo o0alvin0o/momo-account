@@ -2,6 +2,7 @@ package com.momodev.models;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -9,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class AccountTest extends BaseModelTest {
 
     @Test
-    void testSaveAndLoad_SuccessFul() {
+    void testSaveAndLoad_SuccessFul() throws IOException, ClassNotFoundException {
         Account expected = new Account();
         expected.setBalance(new BigDecimal(10000));
 

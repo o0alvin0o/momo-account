@@ -3,13 +3,14 @@ package com.momodev.models;
 import com.momodev.FakeDataBuilder;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BillTest extends BaseModelTest {
     @Test
-    void testDataOperation_Successful() {
+    void testDataOperation_Successful() throws IOException, ClassNotFoundException {
 
         Bill electricBill = FakeDataBuilder.getElectricBill();
         electricBill.setId("1");
